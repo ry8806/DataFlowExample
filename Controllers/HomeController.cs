@@ -36,7 +36,6 @@ namespace DataFlowExample.Controllers
         }
 
         [HttpPost("enter")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> SubmitEntry([FromBody] CompetitionEntryRequest entry)
         {
             // Sanitise the input
